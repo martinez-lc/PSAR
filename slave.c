@@ -22,7 +22,7 @@
 #include "slave.h"
 
 #define PAGE_SIZE sysconf(_SC_PAGE_SIZE)
-#define SERVER_PORT 4242
+#define SERVER_PORT 5252
 
 int socket_fd;
 int userfaultfd;

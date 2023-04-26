@@ -37,6 +37,8 @@ void *InitMaster(int size){
         exit(1);
     }
 
+    printf("local address: %p, tamaño: %d\n",shm_addr, size_shm); ////////
+
     if(mprotect(shm_addr, size_shm, PROT_READ | PROT_WRITE) == -1){
         perror("mprotect");
         munmap(shm_addr, size);
